@@ -2,10 +2,15 @@ import java.util.Arrays;
 
 public class HomeWorkApp {
     public static void main(String[] args) {
+
         taskOne();
         taskTwo();
         taskThree();
         taskFive(3, 4);
+        taskFour();
+        taskSix();
+
+
 
     }
 
@@ -37,7 +42,12 @@ public class HomeWorkApp {
         }
     }
     public static void taskFour() {
-
+        int[][] arr = new int[2][2];
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                arr[i][j] = 1;
+            }
+        }
     }
     public static int[] taskFive(int len, int initialValue) {
         int arr[] = new int[len];
@@ -48,7 +58,17 @@ public class HomeWorkApp {
         return arr;
     }
     public static void taskSix() {
+        int[] arr = {2,1,3,4};
+        int min = arr[0];
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
 
+            if(arr[i] < min) {
+                min = arr[i];
+            }else if(arr[i] > max) {
+                max = arr[i];
+            }
+        }
     }
     public static void taskSeven() {
 
