@@ -3,12 +3,13 @@ import java.util.Arrays;
 public class HomeWorkApp {
     public static void main(String[] args) {
 
-        taskOne();
+/*        taskOne();
         taskTwo();
         taskThree();
         taskFive(3, 4);
         taskFour();
-        taskSix();
+        taskSix();*/
+        taskSeven(new int[] {2, 2, 2, 1, 2, 2, 10, 1});
 
 
 
@@ -70,7 +71,35 @@ public class HomeWorkApp {
             }
         }
     }
-    public static void taskSeven() {
+    public static boolean taskSeven(int[] arr) {
+
+        //[1, 1, 1,  2, 1]
+        int max = arr[0];
+        int leftNumber = 0;
+        int rightNumber = 0;
+
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i] > max) {
+                max = i;
+            }
+        }
+        System.out.println("индекс максимального числа " + max);
+
+        for(int i = 0; i < max; i++) {
+            leftNumber += arr[i];
+        }
+        System.out.println("Сумма левой части " + leftNumber);
+
+        for(int i = max; i < arr.length; i++) {
+            rightNumber += arr[i];
+        }
+        System.out.println("Сумма правой части " + rightNumber);
+
+        if(leftNumber == rightNumber) {
+            return true;
+        }else{
+            return false;
+        }
 
     }
     public static void taskEight() {
