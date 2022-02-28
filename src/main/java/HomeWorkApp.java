@@ -3,15 +3,14 @@ import java.util.Arrays;
 public class HomeWorkApp {
     public static void main(String[] args) {
 
-/*        taskOne();
+        taskOne();
         taskTwo();
         taskThree();
-        taskFive(3, 4);
         taskFour();
-        taskSix();*/
+        System.out.println(Arrays.toString(taskFive(3, 4)));
+        taskSix();
         taskSeven(new int[] {2, 2, 2, 1, 2, 2, 10, 1});
-
-
+        taskEight(new int[] {1,2,3},1);
 
     }
 
@@ -73,7 +72,6 @@ public class HomeWorkApp {
     }
     public static boolean taskSeven(int[] arr) {
 
-        //[1, 1, 1,  2, 1]
         int max = arr[0];
         int leftNumber = 0;
         int rightNumber = 0;
@@ -102,8 +100,8 @@ public class HomeWorkApp {
         }
 
     }
-    public static void taskEight() {
-
+    public static void taskEight(int[] arr, int n) {
+        //не дошло :)
     }
 
 }
