@@ -15,8 +15,8 @@ public class Employee {
         this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
+    public void printEmp() {
+        System.out.println(this.fio + " " + this.position + " " + this.email  + " " +
+                this.phoneNumber + " " + this.salary + " " +this.age);
     }
 }
